@@ -5,7 +5,8 @@ const rawData = require('./raw_data');
 console.log('Starting district wise data processing');
 try {
   const StateDistrictWiseData = rawData.raw_data.reduce((acc, row) => {
-    const isToday = moment().utcOffset(420).isSame(moment(row.dateannounced, "DD-MM-YYYY"), "day");
+    
+
     let stateName = row.detectedstate;
       if(!stateName) {
         return acc;
@@ -32,10 +33,21 @@ try {
       };
     }
     const currentDistrict = acc[stateName].districtData[districtName];
-  
+    
     currentDistrict.confirmed++;
+    
+    const todaysdate = moment().utcOffset(330);
+    //const offsetdelta = moment(todaysdate).utcOffset(330);
+    const datadate = moment(row.dateannounced + " 00:00 +0530", "DD-MM-YYYY HH:mm Z");
+    const isToday = moment(todaysdate).add(-420, "m").isSame(moment(row.dateannounced + " 00:00 +0530", "DD-MM-YYYY HH:mm Z"), "day");
+
     if (isToday) {
       currentDistrict.delta.confirmed++;
+      if (row.detecteddistrict == 'Kannur'){
+        console.log (moment(todaysdate).add(-420, "m").format());
+
+        console.log (datadate.format());
+      }
     }
 //     if(row.currentstatus === 'Hospitalized') {
 //       currentDistrict.active++;
