@@ -5,7 +5,7 @@ const rawData = require('./raw_data');
 console.log('Starting district wise data processing');
 try {
   const StateDistrictWiseData = rawData.raw_data.reduce((acc, row) => {
-    const isToday = moment().utcOffset(330).isSame(moment(row.dateannounced, "DD-MM-YYYY"), "day");
+    const isToday = moment().utcOffset(-90).isSame(moment(row.dateannounced, "DD-MM-YYYY"), "day");
     let stateName = row.detectedstate;
       if(!stateName) {
         return acc;
