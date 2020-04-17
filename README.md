@@ -1,6 +1,6 @@
 # COVID19-India API
 
-A volunteer-driven database for COVID-19 stats & patient tracing in India
+A volunteer-driven database for COVID-19 stats & patient tracing in India.
 
 ## API
 
@@ -23,14 +23,21 @@ A volunteer-driven database for COVID-19 stats & patient tracing in India
 
 - [INDIA COVID-19 TRACKER](https://www.covid19india.org/) (Dashboard)
 - [INDIA COVID-19 Google Map TRACKER](https://goo.gl/maps/U32Ex1gWQxmc6Aot8)
-- [Telegram Instant Updates](https://t.me/covid19indiaorg_updates) (Updates from covid19india.org Team)
-- [Alt. Telegram Channel](https://github.com/xsreality/covid19)
-- [Telegram Bot](https://github.com/Tele-Bots/CovidBot)
+
+Telegram Channels
+- [covid19india.org Ops Channel](https://t.me/covid19indiaorg) (News and Updates from covid19india.org Team)
+- [Telegram Instant Updates](https://t.me/covid19indiaorg_updates) (Instant Updates from covid19india.org Team)
+
+Telegram Bots
+- [CoVID19 India Patients Analyzer and Alerts](https://github.com/xsreality/covid19)
+- [CoVID19 Live Stats](https://github.com/Tele-Bots/CovidBot)
+- [covid19indiatracker_bot](https://github.com/cibinjoseph/covid19indiatracker_bot)
+
 
 ## Quick Links
 
 - [Telegram](https://telegra.ph/CoVID-19--India-Ops-03-24)
-- [Patient Database](https://docs.google.com/spreadsheets/d/e/2PACX-1vSc_2y5N0I67wDU38DjDh35IZSIS30rQf7_NYZhtYYGU1jJYT6_kDx4YpF-qw0LSlGsBYP8pqM_a1Pd/pubhtml) (Google Drive)
+- [Patient Database](http://patientdb.covid19india.org/) (Google Drive)
 
 ## How this works
 
